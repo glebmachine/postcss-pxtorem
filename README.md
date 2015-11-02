@@ -37,6 +37,7 @@ Default:
     root_value: 16,
     unit_precision: 5,
     prop_white_list: ['font', 'font-size', 'line-height', 'letter-spacing'],
+    prop_black_list: [],
     selector_black_list: [],
     replace: true,
     media_query: false
@@ -46,6 +47,7 @@ Default:
 - `root_value` (Number) The root element font size.
 - `unit_precision` (Number) The decimal numbers to allow the REM units to grow to.
 - `prop_white_list` (Array) The properties that can change from px to rem. Set this to an empty array to disable the white list and enable all properties.
+- `prop_black_list` (Array) The properties will be skipped and kept in px.
 - `selector_black_list` (Array) The selectors to ignore and leave as px.
 - `replace` (Boolean) replaces rules containing rems instead of adding fallbacks.
 - `media_query` (Boolean) Allow px to be converted in media queries.
